@@ -1,0 +1,109 @@
+﻿<Window x:Class="Hotel.Employee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel"
+        mc:Ignorable="d"
+        Title="Employee" Height="450" Width="1000">
+    <Grid>
+        <TabControl>
+            <TabItem Loaded="TabItem_Loaded_1" Header="Сотрудники" Background="#FFA20E0E" FontWeight="Bold">
+                <Grid Background="Red">
+                    <DataGrid Name="sotr" d:ItemsSource="{d:SampleData ItemCount=5}" Background="Red" BorderBrush="Red"/>
+                </Grid>
+            </TabItem>
+            <TabItem Loaded="TabItem_Loaded_2" Header="Бронь" Background="#FFA20E0E" FontWeight="Bold">
+                <Grid Background="Red">
+                    <DataGrid Loaded="bron_Loaded" Name="bron" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,150,160" Background="Red" BorderBrush="Red" SelectionChanged="bron_SelectionChanged"/>
+                    <TextBox HorizontalAlignment="Center" Height="165" Margin="0,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1000" Background="#FFEEB557"/>
+                    <Button Content="Удаление" HorizontalAlignment="Left" Margin="810,365,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_2"/>
+                    <Button Content="Изменение" HorizontalAlignment="Left" Margin="810,322,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_1"/>
+                    <Button Content="Добавление" HorizontalAlignment="Left" Margin="810,278,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click"/>
+                    <Button Content="Фильтрация" HorizontalAlignment="Left" Height="30" Margin="850,10,0,0" VerticalAlignment="Top" Width="135" FontSize="20" Click="Button_Click_21"/>
+                    <TextBox HorizontalAlignment="Left" Height="30" Margin="850,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" BorderBrush="Black" Background="Red" Text="Для фильтрации" FontSize="14" TextAlignment="Left"/>
+                    <TextBox Name="Surname_Booking" HorizontalAlignment="Left" Height="35" Margin="30,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Фамилия"/>
+                    <TextBox Name="Name_Booking" HorizontalAlignment="Left" Height="35" Margin="30,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Имя"/>
+                    <TextBox Name="Last_Name_Booking" HorizontalAlignment="Left" Height="35" Margin="30,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Отчество"/>
+                    <TextBox Name="Date_Booking" HorizontalAlignment="Left" Height="35" Margin="270,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Дата"/>
+                    <TextBox Name="Hotel_Class_Booking" HorizontalAlignment="Left" Height="35" Margin="270,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Класс отеля"/>
+                    <TextBox Name="Floors_Booking" HorizontalAlignment="Left" Height="35" Margin="270,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Этаж"/>
+                    <TextBox Name="Rooms_Booking" HorizontalAlignment="Left" Height="35" Margin="510,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Кол-во комнат"/>
+                    <TextBox Name="People_Booking" HorizontalAlignment="Left" Height="35" Margin="510,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Кол-во людей"/>
+                    <TextBox Name="Sum_Booking" HorizontalAlignment="Left" Height="35" Margin="510,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Сумма"/>
+                </Grid>
+            </TabItem>
+            <TabItem Loaded="TabItem_Loaded_3" Header="Гостиницы" Background="#FFA20E0E" FontWeight="Bold">
+                <Grid Background="Red">
+                    <DataGrid Loaded="gostin_Loaded" Name="gostin" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,150,160" Background="Red" BorderBrush="Red" SelectionChanged="gostin_SelectionChanged"/>
+                    <TextBox HorizontalAlignment="Center" Height="165" Margin="0,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1000" Background="#FFEEB557"/>
+                    <Button Content="Удаление" HorizontalAlignment="Left" Margin="810,365,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_5"/>
+                    <Button Content="Изменение" HorizontalAlignment="Left" Margin="810,322,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_4"/>
+                    <Button Content="Добавление" HorizontalAlignment="Left" Margin="810,278,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_3"/>
+                    <Button Content="Поиск" HorizontalAlignment="Left" Height="30" Margin="850,89,0,0" VerticalAlignment="Top" Width="135" FontSize="20"/>
+                    <TextBox HorizontalAlignment="Left" Height="30" Margin="850,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" BorderBrush="Black" Background="Red" Text="Для поиска" FontSize="14" TextAlignment="Left"/>
+                    <Button Content="Фильтрация" HorizontalAlignment="Left" Height="30" Margin="850,10,0,0" VerticalAlignment="Top" Width="135" FontSize="20"/>
+                    <TextBox HorizontalAlignment="Left" Height="30" Margin="850,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" BorderBrush="Black" Background="Red" Text="Для фильтрации" FontSize="14" TextAlignment="Left"/>
+                    <TextBox Name="Hotel_Class" HorizontalAlignment="Left" Height="35" Margin="30,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Класс отеля"/>
+                    <TextBox Name="Floors_Hotel" HorizontalAlignment="Left" Height="35" Margin="30,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Кол-во этажей"/>
+                    <TextBox Name="Rooms_Amount_Hotel" HorizontalAlignment="Left" Height="35" Margin="30,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Кол-во номеров"/>
+                    <TextBox Name="Rooms_On_Floors_Hotel" HorizontalAlignment="Left" Height="35" Margin="270,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Номеров на этаже"/>
+                    <TextBox Name="Room_Capacity_Hotel" HorizontalAlignment="Left" Height="35" Margin="270,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Местность номеров"/>
+                    <TextBox Name="Household_Services_Hotel" HorizontalAlignment="Left" Height="35" Margin="270,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Службы быта"/>
+                    <TextBox Name="Food_Zones_Hotel" HorizontalAlignment="Left" Height="35" Margin="510,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Зона питания"/>
+                    <TextBox Name="Entertainments_Hotel" HorizontalAlignment="Left" Height="35" Margin="510,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Развлечения"/>
+                </Grid>
+            </TabItem>
+            <TabItem Loaded="TabItem_Loaded_4" Header="Фирмы" Background="#FFA20E0E" FontWeight="Bold">
+                <Grid Background="#FFEEB557">
+                    <DataGrid Loaded="firm_Loaded" Name="firm" d:ItemsSource="{d:SampleData ItemCount=5}" Background="Red" BorderBrush="Red" Margin="0,0,0,158" SelectionChanged="firm_SelectionChanged"/>
+                    <Button Content="Удаление" HorizontalAlignment="Left" Margin="788,357,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_8"/>
+                    <Button Content="Изменение" HorizontalAlignment="Left" Margin="788,314,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_7"/>
+                    <Button Content="Добавление" HorizontalAlignment="Left" Margin="788,270,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_6"/>
+                    <TextBox Name="Name_Company" HorizontalAlignment="Left" Height="35" Margin="30,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Название"/>
+                    <TextBox Name="Type_Company" HorizontalAlignment="Left" Height="35" Margin="270,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Тип деятельности"/>
+                </Grid>
+            </TabItem>
+            <TabItem Loaded="TabItem_Loaded_5" Header="Жалобы" Background="#FFA20E0E" FontWeight="Bold">
+                <Grid Background="Red">
+                    <DataGrid Loaded="jalob_Loaded" Name="jalob" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,150,0" Background="Red" BorderBrush="Red"/>
+                    <Button Content="Фильтрация" HorizontalAlignment="Left" Height="30" Margin="850,10,0,0" VerticalAlignment="Top" Width="135" FontSize="20"/>
+                    <TextBox HorizontalAlignment="Left" Height="30" Margin="850,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" BorderBrush="Black" Background="Red" Text="Для фильтрации" FontSize="14" TextAlignment="Left"/>
+                </Grid>
+            </TabItem>
+            <TabItem Loaded="TabItem_Loaded_6" Header="Долги" Background="#FFA20E0E" FontWeight="Bold">
+                <Grid Background="Red">
+                    <DataGrid Loaded="dolg_Loaded" Name="dolg" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,150,160" Background="Red" BorderBrush="Red" SelectionChanged="dolg_SelectionChanged"/>
+                    <TextBox HorizontalAlignment="Center" Height="165" Margin="0,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1000" Background="#FFEEB557"/>
+                    <Button Content="Удаление" HorizontalAlignment="Left" Margin="810,365,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_11"/>
+                    <Button Content="Изменение" HorizontalAlignment="Left" Margin="810,322,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_10"/>
+                    <Button Content="Добавление" HorizontalAlignment="Left" Margin="810,278,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_9"/>
+                    <Button Content="Фильтрация" HorizontalAlignment="Left" Height="30" Margin="850,10,0,0" VerticalAlignment="Top" Width="135" FontSize="20"/>
+                    <TextBox HorizontalAlignment="Left" Height="30" Margin="850,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" BorderBrush="Black" Background="Red" Text="Для фильтрации" FontSize="14" TextAlignment="Left"/>
+                    <TextBox Name="Surname_Debts" HorizontalAlignment="Left" Height="35" Margin="30,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Фамилия"/>
+                    <TextBox Name="Name_Debts" HorizontalAlignment="Left" Height="35" Margin="30,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Имя"/>
+                    <TextBox Name="Last_Name_Debts" HorizontalAlignment="Left" Height="35" Margin="30,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Отчество"/>
+                    <TextBox Name="Sum_Debts" HorizontalAlignment="Left" Height="35" Margin="270,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Сумма"/>
+                    <TextBox Name="Date_Debts" HorizontalAlignment="Left" Height="35" Margin="270,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Дата"/>
+                </Grid>
+            </TabItem>
+            <TabItem Loaded="TabItem_Loaded_7" Header="Клиентская база" Background="#FFA20E0E" FontWeight="Bold">
+                <Grid Background="Red">
+                    <DataGrid Loaded="klient_Loaded" Name="klient" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,150,163" Background="Red" BorderBrush="Red" SelectionChanged="klient_SelectionChanged"/>
+                    <Button Content="Экспорт" HorizontalAlignment="Left" Height="30" Margin="850,8,0,0" VerticalAlignment="Top" Width="135" FontSize="20"/>
+                    <Button Content="Поиск" HorizontalAlignment="Left" Height="30" Margin="850,46,0,0" VerticalAlignment="Top" Width="135" FontSize="20"/>
+                    <TextBox HorizontalAlignment="Left" Height="30" Margin="850,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" BorderBrush="Black" Background="Red" Text="Для поиска" FontSize="14" TextAlignment="Left"/>
+                    <TextBox HorizontalAlignment="Center" Height="165" Margin="0,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1000" Background="#FFEEB557"/>
+                    <Button Content="Удаление" HorizontalAlignment="Left" Margin="810,365,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_14"/>
+                    <Button Content="Изменение" HorizontalAlignment="Left" Margin="810,322,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_13"/>
+                    <Button Content="Добавление" HorizontalAlignment="Left" Margin="810,278,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_12"/>
+                    <TextBox Name="Surname_Client_Base" HorizontalAlignment="Left" Height="35" Margin="30,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Фамилия"/>
+                    <TextBox Name="Name_Client_Base" HorizontalAlignment="Left" Height="35" Margin="30,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Имя"/>
+                    <TextBox Name="Last_Name_Client_Base" HorizontalAlignment="Left" Height="35" Margin="30,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Отчество"/>
+                    <TextBox Name="Email_Client_Base" HorizontalAlignment="Left" Height="35" Margin="270,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Почта"/>
+                    <TextBox Name="Phone_Number_Client_Base" HorizontalAlignment="Left" Height="35" Margin="270,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Номер телефона"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,44 @@
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Hotel.csproj.AssemblyReference.cache
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Hotel.csproj.SuggestedBindingRedirects.cache
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Authorization.g.cs
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Employee.g.cs
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\MainWindow.g.cs
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Visitor.g.cs
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\App.g.cs
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Hotel_MarkupCompile.cache
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Hotel_MarkupCompile.lref
+D:\Users\Екатерина\source\repos\Hotel\Hotel\bin\Debug\Hotel.exe.config
+D:\Users\Екатерина\source\repos\Hotel\Hotel\bin\Debug\Hotel.exe
+D:\Users\Екатерина\source\repos\Hotel\Hotel\bin\Debug\Hotel.pdb
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Authorization.baml
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Employee.baml
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\MainWindow.baml
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Visitor.baml
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Hotel.g.resources
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Hotel.Properties.Resources.resources
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Hotel.csproj.GenerateResource.cache
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Hotel.csproj.CoreCompileInputs.cache
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Hotel.exe
+D:\Users\Екатерина\source\repos\Hotel\Hotel\obj\Debug\Hotel.pdb
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Hotel.csproj.AssemblyReference.cache
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Hotel.csproj.SuggestedBindingRedirects.cache
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Authorization.g.cs
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Employee.g.cs
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\MainWindow.g.cs
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Visitor.g.cs
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\App.g.cs
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Hotel_MarkupCompile.cache
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Hotel_MarkupCompile.lref
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Hotel.exe
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Hotel.pdb
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\bin\Debug\Hotel.exe.config
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\bin\Debug\Hotel.exe
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\bin\Debug\Hotel.pdb
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Authorization.baml
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Employee.baml
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\MainWindow.baml
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Visitor.baml
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Hotel.g.resources
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Hotel.Properties.Resources.resources
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Hotel.csproj.GenerateResource.cache
+C:\Users\ivanl\OneDrive\Рабочий стол\ПРАКТИКА 2\Hotel\Hotel\Hotel\obj\Debug\Hotel.csproj.CoreCompileInputs.cache

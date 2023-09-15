@@ -1,0 +1,53 @@
+﻿<Window x:Class="Hotel.Visitor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel"
+        mc:Ignorable="d"
+        Title="Visitor" Height="450" Width="1000">
+    <Grid>
+        <TabControl>
+            <TabItem Loaded="TabItem_Loaded_8" Header="Посетители" Background="blue" FontWeight="Bold">
+                <Grid Background="Green">
+                    <DataGrid Name="poset" d:ItemsSource="{d:SampleData ItemCount=5}" Background="Green" BorderBrush="Blue"/>
+                </Grid>
+            </TabItem>
+            <TabItem Loaded="TabItem_Loaded_9" Header="Бронь" Background="blue" FontWeight="Bold" Height="20" VerticalAlignment="Bottom">
+                <Grid Background="Green">
+                    <DataGrid Loaded="bron1_Loaded" Name="bron1" d:ItemsSource="{d:SampleData ItemCount=5}" Background="Green" BorderBrush="Green" Margin="0,0,0,160" SelectionChanged="bron1_SelectionChanged"/>
+                    <TextBox HorizontalAlignment="Center" Height="165" Margin="0,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1000" Background="#FFEEB558"/>
+                    <Button Content="Удаление" HorizontalAlignment="Left" Margin="810,365,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_17"/>
+                    <Button Content="Изменение" HorizontalAlignment="Left" Margin="810,322,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_16"/>
+                    <Button Content="Добавление" HorizontalAlignment="Left" Margin="810,278,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_15"/>
+                    <TextBox Name="Date_Booking" HorizontalAlignment="Left" Height="35" Margin="30,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Дата"/>
+                    <TextBox Name="Hotel_Class_Booking" HorizontalAlignment="Left" Height="35" Margin="30,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Класс отеля"/>
+                    <TextBox Name="Floors_Booking" HorizontalAlignment="Left" Height="35" Margin="30,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Этаж"/>
+                    <TextBox Name="Rooms_Booking" HorizontalAlignment="Left" Height="35" Margin="270,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Кол-во комнат"/>
+                    <TextBox Name="People_Booking" HorizontalAlignment="Left" Height="35" Margin="270,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Кол-во людей"/>
+                    <TextBox Name="Sum_Booking" HorizontalAlignment="Left" Height="35" Margin="270,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FFD59A17" FontSize="16" Text="Сумма"/>
+                </Grid>
+            </TabItem>
+            <TabItem Loaded="TabItem_Loaded_10" Header="Гостиницы" Background="blue" FontWeight="Bold">
+                <Grid Background="blue">
+                    <DataGrid Loaded="gostin1_Loaded" Name="gostin1" d:ItemsSource="{d:SampleData ItemCount=5}" Background="green" BorderBrush="green"/>
+                </Grid>
+            </TabItem>
+            <TabItem Loaded="TabItem_Loaded_11" Header="Фирмы" Background="blue" FontWeight="Bold">
+                <Grid Background="blue">
+                    <DataGrid Loaded="firm1_Loaded" Name="firm1" d:ItemsSource="{d:SampleData ItemCount=5}" Background="green" BorderBrush="green"/>
+                </Grid>
+            </TabItem>
+            <TabItem Loaded="TabItem_Loaded_12" Header="Жалобы" Background="blue" FontWeight="Bold">
+                <Grid Background="blue">
+                    <DataGrid Loaded="jalob1_Loaded" Name="jalob1" d:ItemsSource="{d:SampleData ItemCount=5}" Background="green" BorderBrush="green" Margin="0,0,0,160" SelectionChanged="jalob1_SelectionChanged"/>
+                    <TextBox HorizontalAlignment="Center" Height="165" Margin="0,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1000" Background="#FFEEB557"/>
+                    <Button Content="Удаление" HorizontalAlignment="Left" Margin="810,365,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_20"/>
+                    <Button Content="Изменение" HorizontalAlignment="Left" Margin="810,322,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_19"/>
+                    <Button Content="Добавление" HorizontalAlignment="Left" Margin="810,278,0,0" VerticalAlignment="Top" Height="35" Width="180" FontSize="24" Background="#FFF2D6AC" Click="Button_Click_18"/>
+                    <TextBox Name="Feedback_Complaints" HorizontalAlignment="Left" Height="130" Margin="30,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" Background="#FFD59A17" FontSize="16" Text="Отзыв"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
